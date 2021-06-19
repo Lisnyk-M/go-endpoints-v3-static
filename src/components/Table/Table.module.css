@@ -1,0 +1,38 @@
+.wrapper{
+    padding: 20px 0;
+    /* margin: 20px; */
+}
+
+.transaction-history {
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+	border-collapse: collapse; /*убираем пустые промежутки между ячейками*/
+	border: 1px solid grey; /*устанавливаем для таблицы внешнюю границу серого цвета толщиной 1px*/
+	border-radius: 5px;
+}
+
+.row:nth-child(odd) {
+	background: #ffffff;
+}
+
+.cells {
+	width: 290px;
+	padding: 5px 5px;
+}
+.head {
+	composes: cells;
+	background: #00bcd5;
+}
+
+.data {
+    composes: cells;
+	text-align: center;
+}
+
+.buttonDelete {
+	/* position: absolute; */
+	right: 10px;
+	color: #ffffff;
+	background-color: #e33;
+	border: none;
+	border-radius: 2px;
+}
