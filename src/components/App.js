@@ -32,7 +32,7 @@ export default class App extends Component {
     }
 
     addContact = ({ name, email }) => {
-        const ppp = api.addUser( name, email )
+        const ppp = api.addUser( name, email );
 
             ppp.then(res => {
                 api.getUsers()

@@ -23,9 +23,7 @@ class PhoneBook extends Component {
             name: this.state.name,
             email: this.state.email
         }
-        const { name, email } = this.state;
         this.props.onAddContact(contact);
-        // this.setState({name: '', email: ''});
     }
 
     handleChange = e => {
